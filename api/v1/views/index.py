@@ -12,8 +12,8 @@ from models.user import User
 
 from collections import OrderedDict
 
-class_plurals = {'amenities': Amenity, 'cities': City, 'places': Place,
-                 'reviews': Review, 'states': State, 'users': User}
+classes = {'amenities': Amenity, 'cities': City, 'places': Place,
+           'reviews': Review, 'states': State, 'users': User}
 
 
 @app_views.route('/status', strict_slashes=False)
@@ -29,8 +29,8 @@ def stats():
 
     """
     stats = OrderedDict()
-    for key in sorted(class_plurals.keys()):
-        count = storage.count(class_plurals[key])
+    for key in sorted(classes.keys()):
+        count = storage.count(classes[key])
         if count > 0:
             stats[key] = count
     return jsonify(stats)
