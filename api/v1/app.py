@@ -12,13 +12,6 @@ app.register_blueprint(app_views)
 
 cors = CORS(app, resources={"/*": {"origins": "0.0.0.0"}})
 
-
-@app.teardown_appcontext
-def teardown_appcontext(self):
-    """teardown method"""
-    storage.close()
-
-
 @app.errorhandler(404)
 def page_not_found(e):
     """404 error handler
@@ -30,6 +23,9 @@ def page_not_found(e):
     """
     return make_response(jsonify({'error': 'Not found'}), 404)
 
+def close_app(self):
+    """close app when torn diwn"""
+    storage.close()
 
 if __name__ == "__main__":
     host = getenv('HBNB_API_HOST', '0.0.0.0')
