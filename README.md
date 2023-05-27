@@ -157,7 +157,7 @@ No known bugs at this time.
 Alexa Orrico - [Github](https://github.com/alexaorrico) / [Twitter](https://twitter.com/alexa_orrico)  
 Jennifer Huang - [Github](https://github.com/jhuang10123) / [Twitter](https://twitter.com/earthtojhuang)
 Aloh Michael - [Github](https://github.com/Almiviolad) / [Twitter](https://twitter.com/AlohMichael7)
-Daniel Chahul - (add your details here)
+Daniel Chahul - [Github](https://github.com/kwa090)/(https://www.linkedin.com/in/daniel-chahul)
 Second part of Airbnb: Joann Vuong
 ## License
 Public Domain. No copy write protection. 
