@@ -25,7 +25,7 @@ def state_all_cities(state_id):
 @app_views.route("/cities/<city_id>", methods=['GET', 'DELETE', 'PUT'],
                  strict_slashes=False)
 def cities_with_id(city_id):
-    """Methods that retrieves all methods for cities with id"""
+    """Methods that retrieves all methods for cities with id passed as arg"""
 
     if request.method == 'GET':
         """Retrieves a city of a given city_id"""
